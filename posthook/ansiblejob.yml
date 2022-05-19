@@ -1,9 +1,0 @@
-apiVersion: tower.ansible.com/v1alpha1
-kind: AnsibleJob
-metadata:
-  name: hive-cluster-gitrepo
-spec:
-  tower_auth_secret: consol-ansible
-  job_template_name: sample-job-template
-  extra_vars:
-    name: baremetal-demo1
