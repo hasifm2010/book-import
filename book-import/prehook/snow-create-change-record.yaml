@@ -3,11 +3,11 @@ apiVersion: tower.ansible.com/v1alpha1
 kind: AnsibleJob
 metadata:
   name: demo-ocp
-  namespace: book-import
+  namespace: book-import2
   labels:
     app.kubernetes.io/name: bookimport
 spec:
   tower_auth_secret: toweraccess
-  job_template_name: sample-job-template
+  job_template_name: demo-ocp
   extra_vars:
     app_name: bookimport
