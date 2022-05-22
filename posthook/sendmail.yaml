@@ -1,0 +1,14 @@
+---
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleJob
+metadata:
+  name: send-email-notification-post
+  namespace: book-import
+  labels:
+    app.kubernetes.io/name: bookimport
+spec:
+  tower_auth_secret: toweraccess
+  job_template_name: post_task_sendmail
+  extra_vars:
+    app_name: bookimport
+    app_url: book-import.baremetal-demo1.int.consol.ae
