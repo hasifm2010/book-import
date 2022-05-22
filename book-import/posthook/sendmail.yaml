@@ -11,4 +11,4 @@ spec:
   job_template_name: post_task_sendmail
   extra_vars:
     app_name: bookimport
-    app_url: book-import.baremetal-demo1.int.consol.ae
+    app_url: http://book-import-book-import.apps.sno.int.consol.ae/
